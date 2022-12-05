@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee" id="WebApp_ID"
+	version="3.0">
+	<display-name>Assignment_1</display-name>
+	<description>
+		Forum Servlet
+	</description>
+	<!-- Define servlets that are included in the example application -->
+	<servlet>
+		<!--Here we declare servlet's registered name -->
+		<servlet-name>ForumServlet</servlet-name>
+		<servlet-class>webapp.ForumServlet</servlet-class>
+	</servlet>
+	<!--Here we say that the HelloServlet can be invoked by writing the path 
+		and hs to the address bar of the browser -->
+	<servlet-mapping>
+		<servlet-name>ForumServlet</servlet-name>
+		<url-pattern>/forum_handler</url-pattern>
+	</servlet-mapping>
+</web-app>
